@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Charan Marmeto Assesment</title>
+</head>
+<body>
+    <div class="container">
+        <div class="product-image">
+        <img src="marmeto1.jpg" alt="Product Image" height="500px" width="580px">
+
+        <div class="thumbnails" height="auto" width="auto">
+            <img src="side down 3.jpg" alt="Thumbnail 1" height="115px" width="120px" class="selected">
+            <img src="marmeto1.jpg" alt="Thumbnail 2" height="115px" width="125px">
+            <img src="side down 3.jpg" alt="Thumbnail 3" height="115px" width="125px">
+            <img src="side down1.png" alt="Thumbnail 3" height="125px" width="175px">
+        </div>
+    </div>
+
+        <div class="product-details">
+            <p class="product-vendor">Marmeto</p>
+            <h3 class="product-title">Embrace Sideboard</h3>
+            <h2 class="price">$140.00 <span class="discount">-30%</span></h2>
+            <p class="compare-price"><s>$200.00</s></p>
+
+            
+
+            <div class="color-variant" id="color-variant">
+                <label>
+                    <svg width="30" height="20" xmlns="http://www.w3.org/2000/svg">
+                        <rect width="30" height="20" fill="red" onclick="selectColor('red')" class="color-swatch"></rect>
+                    </svg>
+                </label>
+                <label>
+                    <svg width="30" height="20" xmlns="http://www.w3.org/2000/svg">
+                        <rect width="30" height="20" fill="blue" onclick="selectColor('blue')" class="color-swatch"></rect>
+                    </svg>
+                </label>
+                <label>
+                    <svg width="30" height="20" xmlns="http://www.w3.org/2000/svg">
+                        <rect width="30" height="20" fill="yellow" onclick="selectColor('yellow')" class="color-swatch"></rect>
+                    </svg>
+                </label>
+                <label>
+                    <svg width="30" height="20" xmlns="http://www.w3.org/2000/svg">
+                        <rect width="30" height="20" fill="pink" onclick="selectColor('pink')" class="color-swatch"></rect>
+                    </svg>
+                </label>
+            </div>
+            
+
+            <div class="size-selector">
+                
+                <div class="size-selector">
+                    <label>
+                        <input type="radio" name="size" value="small"> Small
+                    </label>
+                    <label>
+                        <input type="radio" name="size" value="medium"> Medium
+                    </label>
+                    <label>
+                        <input type="radio" name="size" value="large"> Large
+                    </label>
+                    <label>
+                        <input type="radio" name="size" value="extra-large"> Extra Large
+                    </label>
+                    <label>
+                        <input type="radio" name="size" value="xxl"> XXL
+                    </label>
+                </div>
+                
+                
+                
+            </div>
+
+            <div class="quantity-selector">
+                <button id="decrement">-</button>
+                <input type="number" id="input" value="1" readonly>
+                <button id="increment">+</button>
+            
+
+            <button onclick="addToCart()" class="add-to-cart-button">Add to Cart</button>
+            </div>
+
+            <p id="addToCartMessage" class="add-to-cart-message"></p>
+
+            <div class="description">
+                <p>The Embrace Sideboard is a stylish wear. With a top cloth designed to provide superior protection and look great, this storage solution is both functional and attractive. It fits seamlessly into any home decor, with clean lines and a timeless look. Crafted from premium materials for a combination of style, durability, and reliability.
+
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
